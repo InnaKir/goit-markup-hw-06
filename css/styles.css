@@ -298,7 +298,6 @@ position: absolute;
 
 .team-item {
   background: #FFFFFF;
-    /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -332,9 +331,7 @@ position: absolute;
   gap: 10px;
   padding-bottom: 30px;
 }
-/* .social-list-item {
-  padding-bottom: 30px;
-} */
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -421,9 +418,6 @@ position: absolute;
 
   color: var(--text-color-theme-dark);
 }
-/* .address-link:hover {
-  color: var(--accent-color);
-} */
 
 .contact-link-footer {
   font-style: normal;
@@ -474,6 +468,8 @@ margin-right: 70px;
   align-items: baseline;
 }
 
+/* backdrop */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -490,6 +486,8 @@ visibility: hidden;
 opacity: 0;
 pointer-events: none;
 }
+
+/* modal-window */
 
 .modal {
   position: absolute;
@@ -519,6 +517,9 @@ padding: 0;
   width: 18px;
   height: 18px;
 }
+
+/* modal-form */
+
 
 /*main portfolio*/
 .portfolio {
