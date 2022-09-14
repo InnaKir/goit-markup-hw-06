@@ -438,12 +438,12 @@ color: var(--text-color-theme-dark);
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.footer-colum-left {
+/* .footer-colum-left {
 margin-right: 70px;
-}
-.footer-colum-right {
+} */
+/* .footer-colum-right {
   margin-right: 70px;
-}
+} */
 
 .footer-social-icon {
   fill: var(--text-color-theme-dark);
@@ -468,6 +468,7 @@ margin-right: 70px;
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-modal-form {
   display: flex;
@@ -479,6 +480,7 @@ margin-right: 70px;
   padding-left: 16px;
     width: 358px;
     height: 50px;
+background-color: transparent;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -545,7 +547,7 @@ pointer-events: none;
   left: 50%;
   transform:translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   background-color: var(--text-color-theme-dark);
 }
 
@@ -562,16 +564,22 @@ border-radius: 50%;
 background-color: transparent;
 border: 1px solid rgba(0, 0, 0, 0.1);
 padding: 0;
+transition: border-color var(--transition-dur-func);
 }
 .modal-close-icon {
   width: 18px;
   height: 18px;
 }
 
+.modal-close-btn:focus {
+border-color: var(--accent-color);
+}
+
 /* modal-form */
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
@@ -582,6 +590,9 @@ padding: 0;
 .modal-form-field {
   display: block;
   margin-bottom: 10px;
+}
+.modal-form-field-coment {
+  margin-bottom: 20px;
 }
 
 .modal-form-input {
@@ -649,6 +660,8 @@ transition: fill var(--transition-dur-func);
 display: flex;
 align-items: center;
 margin-bottom: 30px;
+justify-content: center;
+line-height: 1.7;
 }
 
 .modal-form-check {
@@ -663,8 +676,9 @@ margin-bottom: 30px;
   padding: 4px 3px 2px 3px;
   fill: var(--text-color-theme-dark);
 
-  border: 0.2px solid var(--main-text-color);
+  border: 1px solid var(--main-text-color);
   border-radius: 2px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   cursor: pointer;
   margin-right: 10px;
  
@@ -701,11 +715,11 @@ margin-bottom: 30px;
 
   color: var(--text-color-theme-dark);
   background-color: var(--accent-color);
+  transition: background-color var(--transition-dur-func);
 }
 
-.modal-form-submit:hover,
 .modal-form-submit:focus {
-  background-color: var(--accent-color);
+  background-color: #188CE8;
 }
 /*main portfolio*/
 .portfolio { 
